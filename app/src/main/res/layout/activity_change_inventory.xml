@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.drinkapp.ChangeInventoryActivity"
+    >
+
+    <EditText
+        android:id="@+id/item_type_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="@string/ItemType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/item_producer_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="@string/ProducerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/item_description"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:text="@string/ItemDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/add_item_to_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addItemClickFunction"
+        android:text="@string/addItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBoxContentFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="9dp"
+        android:text="Low contents"
+        app:layout_constraintEnd_toEndOf="@+id/item_description"
+        app:layout_constraintTop_toBottomOf="@+id/item_description" />
+
+</android.support.constraint.ConstraintLayout>

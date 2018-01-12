@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DrinkApp</string>
+    <string name="header">Choose an action</string>
+    <string name="inventory">Check Inventory</string>
+    <string name="changeInv">Change Inventory</string>
+    <string name="addItem">Add Item</string>
+    <string name="ItemType">Item type</string>
+    <string name="ProducerName">Name of producer</string>
+    <string name="ItemDesc">Description</string>
+</resources>
